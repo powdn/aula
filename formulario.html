@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> FORMULÁRIO </title>
+    </head>
+    <body> 
+        <form method="POST" action="../Desktop/aula.html"> 
+            <fieldset>
+                <legend>Formulário de Cadastro</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required/>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required/>
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" maxlength="11" pattern="(123.546.789.10)" title="Digite o CPF com os pontos" required/>
+                </div>
+                <div>
+                    <label for="cor">Minha Cor Favorita:</label>
+                    <input type="color" name="cor" id="cor"/>
+                </div>
+                <div>
+                    <label for="idade">Data de Nascimento:</label>
+                    <input type="date" name="idade" id="idade"/>
+                </div>
+                <div>
+                    <label for="hrn">Hora de Nascimento:</label>
+                    <input type="datetime-local" name="hrn" id="hrn"/>
+                </div>
+                <div>
+                    <label for="nmr">Número:</label>
+                    <input type="number" name="nmr" id="nmr"/>
+                </div>
+                <div>
+                    <label for="range">Range:</label>
+                    <input type="range" name="range" id="range" min="1" max="5"/>
+                </div>
+                <div>
+                    Sexo:
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sexo" id="masc" />
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="sexo" id="fem" checked/>
+                </div>
+                <div>
+                    Minhas comidas favoritas:
+                    <label for="italiana">Italiana</label>
+                    <input type="checkbox" name="comida" id="italiana"/>
+                    <label for="japonesa">Japonesa</label>
+                    <input type="checkbox" name="comida" id="japonesa"/>
+                    <label for="brasileira">Brasileira</label>
+                    <input type="checkbox" name="comida" id="brasileira"/>
+                    <label for="francesa">Francesa</label>
+                    <input type="checkbox" name="comida" id="francesa"/>
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required/>
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label> 
+                    <textarea name="msg" id="msg" cols="50" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado">
+                        <optgroup label="Sul">
+                            <option>Santa Catarina</option>   
+                            <option>Paraná</option>
+                            <option selected>Rio Grande do Sul</option> 
+                            <option>Mato Grosso do Sul</option>                        
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="deacordo">Li e estou de acordo</label>
+                    <input type="radio" name="deacordo" id="deacordo" />
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Apagar Dados"/>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+ </html>
