@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Canvas </title>
+	</head>
+	<body>
+        
+        <canvas id="canvas1" width="200" height="100" style="border: 1px solid black;" ></canvas>
+
+        <br></br>
+
+		<canvas id="canvas2" width="200" height="100" style="border: 1px solid black;" ></canvas>
+        
+        <br></br>
+
+		<canvas id="canvas3" width="200" height="100" style="border: 1px solid black;" ></canvas>
+        
+        <br></br>
+
+		<canvas id="canvas4" width="200" height="100" style="border: 1px solid black;" ></canvas>
+        
+        <script>
+            var canvas1 = document.getElementById('canvas1').getContext('2d');
+            canvas1.fillStyle = "blue"
+            canvas1.fillRect(0,0,150,75);
+
+            var canvas2 = document.getElementById('canvas2').getContext('2d');
+            canvas2.moveTo(0,0);
+            canvas2.lineTo(200,100);
+            canvas2.stroke();
+
+            var canvas3 = document.getElementById('canvas3').getContext('2d');
+            canvas3.font = "20px Verdana";
+            canvas3.fillText("Curso Html",50,30);
+
+            
+            var canvas4 = document.getElementById('canvas4').getContext('2d');
+            canvas4.font = "20px Verdana";
+            canvas4.strokeText("Curso Html",50,30);
+        </script>    
+    </body>
+</html> 
