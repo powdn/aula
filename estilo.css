@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND*/
+#bg{
+    background-color: red;
+    background-image: url('../bg.png');    
+}
+
+#bg main{
+    width: 100%;
+    height: 1000px; 
+}
+
+#bg main .elemento{
+    width: 600px;
+    height: 500px;
+    background-color: aqua;
+    background-image: url('../bg.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+}
+
+/* FONTS*/
+#fonts h1{
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: lightcoral underline;
+    color: seagreen;
+}
+#fonts p{
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+
+    color: rgb(20, 28, 51);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 35px;
+    text-transform: initial;
+    word-spacing: 10px;
+
+}
+
+/* LINKS */
+
+#links a:link{
+    text-decoration: lightslategray underline;
+    color: lightslategray;
+
+}
+
+#links a:visited{
+    color: lime;
+}
+
+#links a:active{
+    color: mediumslateblue;
+}
+
+#links a:hover{
+    color: midnightblue;
+}
