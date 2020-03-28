@@ -161,3 +161,110 @@ body{
 #float .clear{
     clear: both;
 }
+
+
+/* SELETOR COMPLEXO*/
+#seletor_complexo h1 + p{
+    color: red;
+}
+
+#seletor_complexo h1 + p + p{
+    color: lightgreen;
+}
+
+#seletor_complexo a[href]{
+    color: lightseagreen;
+}
+
+#seletor_complexo a[href="http://wwww.4linux.com.br"]{
+    color: orangered;
+}
+
+/* ex: a[href~="x" >valor é uma lista separadda por espaço
+a[href^="x"  >cujo valor começa exatamente com string "x"
+a[href$="x"  >cujo valor termina exatamente com string "x"
+a[href*="x"  >cujo valor contenha a string "x"  */
+
+#seletor_complexo div p > a{
+    color: lime;
+}
+
+#seletor_complexo input:checked{
+    height: 50px;
+    width: 50px;
+}
+
+/*PSEUDO-CLASSE*/
+#pseudoclasse table tr:nth-child(odd){
+    background-color: palegreen;
+} 
+
+#pseudoclasse table tr:nth-child(even){
+    background-color: plum;
+}
+
+#pseudoclasse p:empty{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(20, 28, 51);
+}
+
+#pseudoclasse input:disabled{
+    background-color: salmon;
+}
+
+#pseudoclasse input:enabled{
+    background-color: black;
+}
+
+
+/* PSEUDO-CLASSE 2*/
+#pseudoclasse2 h1:first-child{
+    background-color: cadetblue;
+}
+
+#pseudoclasse2 h1:last-child{
+    background-color: chartreuse;
+}
+
+#pseudoclasse2 p:first-of-type{
+    background-color: darkgoldenrod;
+} 
+
+#pseudoclasse2 p:last-of-type{
+    background-color: darksalmon;
+}
+
+#pseudoclasse2 p:nth-child(3){
+    background-color: deeppink;
+}
+
+#pseudoclasse2 p:nth-of-type(3){
+    background-color: forestgreen;
+}
+
+#pseudoclasse2 p:not(.paragrafo){
+   color: goldenrod;
+}
+
+#pseudoclasse2 p::first-letter{
+    font-size: 25px;
+    color: indianred;
+}
+
+#pseudoclasse2 p::first-line{
+        color: khaki;
+}
+
+#pseudoclasse2 p::before{
+    content: "Leia este paragrafo:";
+}
+
+#pseudoclasse2 p::after{
+    content: "Lembrar disso.";
+}
+
+
+
+
+
