@@ -1,0 +1,56 @@
+div{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid red;
+    color: black;
+}
+
+.background_clip{
+    background-color: black;
+    background-clip: content-box;
+}
+
+.background_origin{
+    background-image: url('icon.png');
+    background-repeat: no-repeat;
+    background-color: skyblue;
+    background-origin: content-box;
+}
+
+.background_size{
+    background-image: url('icon.png');
+    background-repeat: no-repeat;
+    background-color: rgb(58, 148, 106);
+    background-size: 100%;
+}
+
+.box_shadow{
+    color: black;
+    background-color: slategrey;
+    box-shadow: teal 3px 12px 22px, 0px 0px 18px rgb(29, 29, 110) inset ;
+    text-shadow: red -15px -11px 0px;
+    border-radius: 28px;
+}
+
+.transicao1{
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+
+    /* transition: width 5s linear 0.5s  pode ser feito na mesma linha */
+}
+
+.transicao1:hover{
+    width: 300px;
+}
+
+.transicao2{
+    transition: width 2s linear 0.5s, height 4s linear;
+}
+
+.transicao2:hover{
+    width: 300px;
+    height: 300px;
+}
