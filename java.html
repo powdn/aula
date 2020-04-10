@@ -4,18 +4,47 @@
         <meta charset="UTF-8"/>
         <title>Aula 8</title>
         <script>
-         //   alert('abriu a página'); 
+         //   alert('abriu a página');
+          //<body onload="exibeOi();"> define mensagem no carregamento
         </script>
     </head>
-    <body>
+    <body>     
+        
+        <div id="divCoord" style="width:100px; height: 150px; border: 1px solid olivedrab;" onmousemove="moveu(event);" onmouseout="limpaCoord();"></div>
+        <p id="coord"></p>
+        
         <button onclick="javascript: alert('clicou!');">Clique aqui</button>
-        <p id="typeof"></p>
+
+        <p id="typeof" ondblclick="dblClick();" onmousedown="mouseDown(this);" onmouseup="mouseUp(this);">Clique duas vezes aqui</p> 
+        
         <script>
+
          //   alert('abriu a página totalmente');
          document.getElementById("typeof").innerHTML = typeof "4Linux" + "<br/>" + typeof 3.14 + "<br/>" + typeof false + "<br/>" + typeof [1,2,3,4] + "<br/>" + typeof {name: '4Linux', curso: 'HTML5 e CSS3 Essentials'};
         </script>
 
         <p id="forin"></p>
+      
+        <form action="" method="post" onsubmit="return enviaForm();" onreset="apagaForm();">
+            <input id="nome" type="text" onblur="blurNoInput();" onfocus="focoNoInput(this);" onkeyup="keyUp();" onkeypress="keyPress();" onkeydown="keyDown();" /> 
+
+
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Apagar"/>
+        </form>
+
+        <select id="carros" onchange="mudaCarro()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+        </select>
+
+        <p id="mostraCarro"></p>
+
+        <button onclick="confirma();">Clique aqui para confirmar!</button>
+
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html> 
+
