@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <title>Placeholder</title>
+
+    <script type="text/javascript" src="assets/plugins/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript/" src="assets\plugins\placeholder\jquery.placeholder.js"></script>
+
+    <script>
+        $(function(){
+            $('input, textarea').placeholder();
+        });
+    </script>
+</head>
+<body>
+    <form id="form_contato" method="POST" action="">
+        <legend>Contate-me</legend>
+        <fieldset>
+            <!--Inicio campo nome-->
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required/>
+
+            <br/>
+
+            <!--Campo email-->
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email" required/>
+
+            <br/>
+
+            <!--campo telefone-->
+            <label for="telefone">telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone"/>
+
+            <br/>
+
+            <!--campo mensagem-->
+            <label for="mensagem">mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem" required></textarea>
+
+            <br/><br/>
+
+            <!--botões forms-->
+            <input type="submit" value="Enviar" class="btn btn_envia"/>
+            <input type="reset" value="Apagar" class="btn btn_apaga"/>
+        </fieldset>
+    </form>
+</body>
+</html>

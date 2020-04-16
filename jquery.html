@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 10</title>
+        <script type="text/javascript" src="plugins/jquery-3.5.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#link").click(function(){
+                    $("#conteudo").slideDown('slow').delay(1000).slideUp('slow');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="" id="link">Clique aqui para exibir a div</a>
+        <div id="conteudo" style="width: 200px; height: 100px; background-color: #ff0000; display:none;"></div>
+    </body>
+</html>
